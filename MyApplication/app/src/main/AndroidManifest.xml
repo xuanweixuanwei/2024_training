@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
-
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
 
         android:icon="@mipmap/ic_launcher"
@@ -10,15 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         android:allowBackup="true"
-        android:fullBackupContent="@xml/backup_descriptor">
+        android:fullBackupContent="@xml/backup_descriptor"
+        >
         <activity
             android:name=".week02.QueryActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".week01.LogTestActivity"
             android:exported="true" />
         <activity
-            android:name=".week01.LogTestActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

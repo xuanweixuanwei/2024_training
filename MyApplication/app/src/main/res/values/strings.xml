@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="to_week_01">第一周</string>
+    <string name="to_week_02">第二周</string>
+    <string name="to_week_03">第三周</string>
+
+    <string name="btn_init">Initialize data</string>
+    <string name="btn_load">Load data</string>
+    <string name="btn_backup">Backup</string>
+    <string name="btn_restore">Restore</string>
+    <string name="restore_skip">Restore skipped due to backup device not correct.</string>
+    <string name="GetRequest">网络请求并写入数据</string>
+    <string name="showDB">显示数据库数据</string>
 </resources>

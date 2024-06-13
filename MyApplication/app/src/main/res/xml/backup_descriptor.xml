@@ -7,8 +7,10 @@
     <!--        path="Post.jpg" />-->
     <include
         domain="sharedpref"
-        path="." />
-    <include domain="database" />
+        path="."
+        requireFlags="deviceToDeviceTransfer"
+        />
+    <exclude domain="database" />
     <!-- exclude指定不参与备份的文件 -->
     <!-- path里指定.代表该目录下所有文件都适用这个规则，免去逐个指定各个文件 -->
     <exclude domain="file" />
