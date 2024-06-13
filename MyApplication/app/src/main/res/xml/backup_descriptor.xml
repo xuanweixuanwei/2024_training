@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- include指定参与备份的文件 -->
+    <!-- domain指定root代表这个的规则适用于data目录 -->
+    <!--    <include-->
+    <!--        domain="root"-->
+    <!--        path="Post.jpg" />-->
+    <include
+        domain="sharedpref"
+        path="." />
+    <include domain="database" />
+    <!-- exclude指定不参与备份的文件 -->
+    <!-- path里指定.代表该目录下所有文件都适用这个规则，免去逐个指定各个文件 -->
+    <exclude domain="file" />
+
+    <!--<exclude domain="file" path="." />出现警告：
+    . is not in an included path-->
+</full-backup-content>
