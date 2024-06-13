@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
     android:layout_gravity="center"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/helloBtn"
+        android:id="@+id/toWeek01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="#CA9393"
-        android:text="Hello World!"
-        android:gravity="center_vertical"
-        android:padding="25dp"
-        android:textStyle="bold|italic"
-        android:textSize="30sp"
-        android:textColor="@color/white" />
+        style="@style/NavButtonStyle"
+        android:text="@string/to_week_01"
+ />
+
+    <Button
+        android:id="@+id/toWeek02"
+        style="@style/NavButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_week_02"
+ />
+
+    <Button
+        android:id="@+id/toWeek03"
+        style="@style/NavButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_week_03"
+ />
 
 </LinearLayout>
