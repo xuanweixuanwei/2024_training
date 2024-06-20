@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btnToWeek01 = viewBinding.toWeek01;
         btnToWeek02 = viewBinding.toWeek02;
         btnToWeek03 = viewBinding.toWeek03;
+
     }
 
     private void initListener() {

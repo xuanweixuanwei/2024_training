@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+tools:context=".ui.activity.RegisterActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:layoutAnimation="@anim/layout_from_bottom"
+    android:orientation="vertical"
+    android:paddingHorizontal="40dp"
+    tools:layoutAnimation="@null">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/register"
+        android:textColor="@color/black60"
+        android:textSize="@dimen/sp_23"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/register_hint"
+        android:textColor="@color/black20"
+        android:ellipsize="end"
+        android:textSize="@dimen/sp_14" />
+
+
+
+    <com.dejavu.utopia.view.ClearEditText
+        android:id="@+id/et_register_email"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/common_email_input_hint"
+        android:inputType="textEmailAddress"
+        android:background="@null"
+        android:singleLine="true"
+        />
+
+    <View style="@style/HorizontalLineStyle" />
+
+    <com.dejavu.utopia.view.PasswordEditText
+        android:id="@+id/et_register_password1"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/register_password_hint1"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="18"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <View style="@style/HorizontalLineStyle" />
+
+    <com.dejavu.utopia.view.PasswordEditText
+        android:id="@+id/et_register_password2"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/register_password_hint2"
+        android:imeOptions="actionDone"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="18"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        />
+
+    <View style="@style/HorizontalLineStyle" />
+
+    <com.dejavu.utopia.view.ClearEditText
+        android:id="@+id/et_register_question"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="备用验证问题，注册成功后可再修改"
+        android:inputType="text"
+        android:maxLines="30"
+        android:background="@null"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+    <View style="@style/HorizontalLineStyle" />
+
+
+    <com.dejavu.utopia.view.ClearEditText
+        android:id="@+id/et_register_answer"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="答案(未输入上面的验证问题则无效)"
+        android:inputType="text"
+        android:maxLines="30"
+        android:background="@null"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        />
+
+
+
+    <View style="@style/HorizontalLineStyle" />
+
+
+    <Button
+        android:id="@+id/btn_register_commit"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:text="@string/register" />
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
