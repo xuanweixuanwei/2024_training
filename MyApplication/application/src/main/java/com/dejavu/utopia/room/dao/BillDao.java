@@ -17,12 +17,10 @@ import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
-@TypeConverters({LocalDateConverter.class, LocalDateTimeConverter.class, AmountDetailConverter.class})
+@TypeConverters({LocalDateConverter.class, LocalDateTimeConverter.class,
+        AmountDetailConverter.class})
 @Dao
 public interface BillDao {
-
-    // 基础的CRUD操作
-    // ... 省略其他基本操作 ...
 
     @Insert
     void insert(Bill bill);
@@ -33,18 +31,22 @@ public interface BillDao {
     @Delete
     void delete(Bill bill);
 
+
     @Query("SELECT * FROM bills")
     List<Bill> getAllBills();
+
 
     @Query("SELECT * FROM bills WHERE account_id = :accountId")
     List<Bill> getAllBillsForAccount(int accountId);
 
-
     // 计算某一天的总入账、总出账、净利润
-    @Query("SELECT * FROM bills WHERE account_id = :accountId AND date BETWEEN :startDate AND :endDate AND transaction_type > 1")
+    @Query("SELECT * FROM bills WHERE account_id = :accountId AND date BETWEEN :startDate AND " +
+            ":endDate AND transaction_type > 1")
     List<Bill> getTotalIncomeForDay(int accountId, LocalDate startDate, LocalDate endDate);
 
-    @Query("SELECT * FROM bills WHERE account_id = :accountId AND date BETWEEN :startDate AND :endDate AND transaction_type < 0")
+
+    @Query("SELECT * FROM bills WHERE account_id = :accountId AND date BETWEEN :startDate AND " +
+            ":endDate AND transaction_type < 0")
     List<Bill> getTotalExpenseForDay(int accountId, LocalDate startDate, LocalDate endDate);
 
 

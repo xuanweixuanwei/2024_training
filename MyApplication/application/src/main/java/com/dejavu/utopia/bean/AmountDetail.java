@@ -1,5 +1,9 @@
 package com.dejavu.utopia.bean;
 
+import androidx.annotation.NonNull;
+
+import java.util.Arrays;
+
 public class AmountDetail {
     private int yuan; // 元
     private int jiao; // 角
@@ -37,10 +41,15 @@ public class AmountDetail {
     }
 
     /**
-     *  计算总金额
-     * */
+     * 计算总金额
+     */
     public double getTotalAmount() {
         return yuan + jiao / 10.0 + fen / 100.0;
     }
 
+    @NonNull
+    @Override
+    public String toString() {
+        return Arrays.toString(new int[]{getYuan(), getJiao(), getFen()});
+    }
 }

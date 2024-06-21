@@ -32,4 +32,7 @@ public interface AccountDao {
 
     @Query("SELECT * FROM bills WHERE account_id = :accountId")
     List<Bill> getAllBillsForAccount(int accountId);
+
+    @Query("SELECT * FROM accounts")
+    List<Account> queryAllAccount();
 }

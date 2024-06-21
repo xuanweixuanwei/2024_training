@@ -63,12 +63,13 @@ public class Bill {
     public Bill(LocalDate transactionTime, AmountDetail amountDetail, String note,
                 int accountId) {
         this.transactionTime = transactionTime;
-        this.addedTime = LocalDateTime.now();
         this.amountDetail = amountDetail;
         this.note = note;
         this.accountId = accountId;
+        this.addedTime = LocalDateTime.now();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Ignore
     public Bill(LocalDate transactionTime, AmountDetail amountDetail, String note, int accountId,
                 int transactionType) {
@@ -77,6 +78,7 @@ public class Bill {
         this.note = note;
         this.accountId = accountId;
         this.transactionType = transactionType;
+        this.addedTime = LocalDateTime.now();
     }
 
     public int getId() {
