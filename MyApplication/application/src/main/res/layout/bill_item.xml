@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/iv_bill_type_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/drawable_at_sign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bill_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="类型"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_bill_type_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_bill_type_icon" />
+
+    <TextView
+        android:id="@+id/tv_bill_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="23:59"
+        android:textColor="@color/panda"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bill_type_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_bill_type_icon" />
+
+    <TextView
+        android:id="@+id/tv_bill_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="账单备注"
+        android:textColor="@color/panda"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_filter"
+        app:layout_constraintStart_toEndOf="@+id/tv_filter" />
+
+    <TextView
+        android:id="@+id/tv_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="|"
+        android:textColor="@color/black25"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_bill_time"
+        app:layout_constraintStart_toEndOf="@+id/tv_bill_time" />
+
+    <TextView
+        android:id="@+id/tv_bill_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+520.00"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="15dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

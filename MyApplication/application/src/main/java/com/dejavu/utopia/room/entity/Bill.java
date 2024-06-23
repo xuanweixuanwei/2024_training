@@ -28,7 +28,7 @@ import java.util.Date;
                 childColumns = "account_id",
                 onDelete = ForeignKey.CASCADE),
         indices = {@Index("account_id")})
-public class Bill {
+public class Bill implements Comparable<Bill> {
 
     @PrimaryKey(autoGenerate = true)
     private int id;
@@ -79,6 +79,20 @@ public class Bill {
         this.accountId = accountId;
         this.transactionType = transactionType;
         this.addedTime = LocalDateTime.now();
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @Override
+    public int compareTo(Bill other) {
+        // 比较transactionTime
+        int dateComparison = this.transactionTime.compareTo(other.transactionTime);
+
+        // 如果transactionTime相同，则继续比较addedTime
+        if (dateComparison == 0) {
+            return this.addedTime.compareTo(other.addedTime);
+        } else {
+            return dateComparison;
+        }
     }
 
     public int getId() {
@@ -136,4 +150,6 @@ public class Bill {
     public void setTransactionType(int transactionType) {
         this.transactionType = transactionType;
     }
+
+
 }
