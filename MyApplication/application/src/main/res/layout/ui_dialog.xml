@@ -8,7 +8,7 @@
     app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="10dp"
     app:cardElevation="0px"
-    tools:context=".ui.dialog.CommonDialog">
+>
 
     <LinearLayout
         android:id="@+id/ll_ui_container"

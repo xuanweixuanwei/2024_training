@@ -55,30 +55,36 @@ public class Bill implements Comparable<Bill> {
     @ColumnInfo(name = "transaction_type")
     private int transactionType;
 
+    @ColumnInfo(name = "bill_type")
+    private String type;
+
     public Bill() {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Ignore
     public Bill(LocalDate transactionTime, AmountDetail amountDetail, String note,
-                int accountId) {
+                int accountId,String billType) {
         this.transactionTime = transactionTime;
         this.amountDetail = amountDetail;
         this.note = note;
         this.accountId = accountId;
         this.addedTime = LocalDateTime.now();
+        this.type = billType;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Ignore
     public Bill(LocalDate transactionTime, AmountDetail amountDetail, String note, int accountId,
-                int transactionType) {
+                int transactionType,String billType) {
         this.transactionTime = transactionTime;
         this.amountDetail = amountDetail;
         this.note = note;
         this.accountId = accountId;
         this.transactionType = transactionType;
         this.addedTime = LocalDateTime.now();
+        this.type = billType;
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -151,5 +157,11 @@ public class Bill implements Comparable<Bill> {
         this.transactionType = transactionType;
     }
 
+    public String getType() {
+        return type;
+    }
 
+    public void setType(String type) {
+        this.type = type;
+    }
 }

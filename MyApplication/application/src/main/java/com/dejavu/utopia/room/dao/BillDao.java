@@ -49,11 +49,30 @@ public interface BillDao {
             ":endDate AND transaction_type < 0")
     List<Bill> getTotalExpenseForDay(int accountId, LocalDate startDate, LocalDate endDate);
 
-
     // 计算全部入账、出账
     @Query("SELECT * FROM bills WHERE account_id = :accountId AND transaction_type > 0")
     List<Bill> getTotalIncome(int accountId);
 
     @Query("SELECT * FROM bills WHERE account_id = :accountId AND transaction_type < 0")
     List<Bill> getTotalExpense(int accountId);
+
+    // 查询某个月的全部账单
+    @Query("SELECT * FROM bills WHERE account_id = :accountId AND date BETWEEN :startDate AND :endDate")
+    List<Bill> getAllBillsForMonth(int accountId, LocalDate startDate, LocalDate endDate);
+
+    // 查询某个月的全部支出
+    @Query("SELECT * FROM bills WHERE account_id = :accountId AND date BETWEEN :startDate AND :endDate AND transaction_type < 0")
+    List<Bill> getTotalExpenseForMonth(int accountId, LocalDate startDate, LocalDate endDate);
+
+    // 查询某个月的全部收入
+    @Query("SELECT * FROM bills WHERE account_id = :accountId AND date BETWEEN :startDate AND :endDate AND transaction_type > 0")
+    List<Bill> getTotalIncomeForMonth(int accountId, LocalDate startDate, LocalDate endDate);
+
+    // 查询特定时间范围内的全部账单
+    @Query("SELECT * FROM bills WHERE account_id = :accountId AND date BETWEEN :startDate AND :endDate")
+    List<Bill> getAllBillsBetweenDates(int accountId, LocalDate startDate, LocalDate endDate);
+
+    // 查询某一个type的全部账单
+    @Query("SELECT * FROM bills WHERE account_id = :accountId AND transaction_type = :transactionType")
+    List<Bill> getAllBillsByType(int accountId, int transactionType);
 }

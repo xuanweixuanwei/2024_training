@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/bill_type_selector.xml" value="0.1" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/button_circle_selector.xml" value="0.24635416666666668" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/drawable_bank.xml" value="0.14907407407407408" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/drawable_bill.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/drawable_chart_pie.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/drawable_clothes.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/drawable_me.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/drawable_oval_love.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/drawable_pencil.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/drawable_picture.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/drawable_shop.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/drawable_shopping.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/ic_baseline_color_lens_24.xml" value="0.15092592592592594" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/ic_button.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/ic_camera.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/ic_hamburger_button.xml" value="0.15092592592592594" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/ic_launcher_background.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/ic_log.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/ic_mail_open.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/ic_me.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/ic_power.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/ic_viewfinder.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/radio_bt_selector.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/radio_btn_selector.xml" value="0.36564102564102563" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/rounded_rectangle.xml" value="0.15462962962962962" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/rounded_solid_rectangle.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/shape_aqi_title.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/shape_blue_alarm.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/transparent_selector.xml" value="0.1" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/type_back.xml" value="0.24635416666666668" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_close_small.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_bank.xml" value="0.24635416666666668" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_category.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_happy.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_income.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_journey.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_light_rain.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_medical.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_more.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_oval_love_two.xml" value="0.24635416666666668" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_pet.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_shop.xml" value="0.14444444444444443" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_shopping.xml" value="0.14444444444444443" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_study.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_study_selected.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_drawable_writing.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/drawable/vector_password_on.xml" value="0.1425925925925926" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/activity_ani.xml" value="0.1" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/activity_fu_jin.xml" value="0.19739583333333333" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/activity_login.xml" value="0.4466666666666667" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/activity_main1.xml" value="0.19739583333333333" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/activity_register.xml" value="0.22871376811594202" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/bill_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/bill_type_radio_button.xml" value="0.1" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/fa_detail_top_layout.xml" value="0.4466666666666667" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/fragment_add_bill.xml" value="0.4466666666666667" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/fragment_detail.xml" value="0.2105978260869565" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/fragment_statistics.xml" value="0.7333333333333334" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/fragment_umbrella_cabinet_select.xml" value="0.19739583333333333" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/layout_today_detail.xml" value="0.19739583333333333" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/result_popup_window_layout.xml" value="0.5" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/shangjia_item.xml" value="0.1" />
+        <entry key="..\:/Android/2024_training/MyApplication/application/src/main/res/layout/ui_dialog.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectResources">
+    <resource url="http://schemas.android.com/apk/res/android" location="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

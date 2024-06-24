@@ -51,6 +51,14 @@ public class Account {
         this.createdTime = LocalDateTime.now();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @Ignore
+    public Account(String username, String password) {
+        this.username = username;
+        this.password = password;
+        this.createdTime = LocalDateTime.now();
+    }
+
     // Getters and Setters
     public int getId() {
         return id;

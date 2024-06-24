@@ -67,7 +67,7 @@ public class CalculatorUtil {
             double a = operandStack.pop();
             operandStack.push(applyOp(op, a, b));
         }
-        DecimalFormat df = new DecimalFormat("0.######"); // 保留六位小数，不足六位时不补零
+        DecimalFormat df = new DecimalFormat("0.##"); // 保留2位小数，不足2位时不补零
         return expression+"="+df.format(operandStack.pop());
     }
 
@@ -102,4 +102,6 @@ public class CalculatorUtil {
                 throw new IllegalArgumentException("Unsupported operation");
         }
     }
+
+
 }

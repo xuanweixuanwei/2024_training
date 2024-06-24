@@ -30,6 +30,9 @@ public interface AccountDao {
     @Query("SELECT * FROM accounts WHERE username = :username AND password = :password")
     Account checkAccountCredentials(String username, String password);
 
+    @Query("SELECT * FROM accounts WHERE username = :username ")
+    Account checkEmail(String username);
+
     @Query("SELECT * FROM bills WHERE account_id = :accountId")
     List<Bill> getAllBillsForAccount(int accountId);
 

@@ -10,9 +10,10 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="48dp"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:background="@drawable/drawable_clothes"
+        android:scaleType="fitCenter"
+        android:src="@drawable/vector_drawable_category"
           />
 
     <TextView

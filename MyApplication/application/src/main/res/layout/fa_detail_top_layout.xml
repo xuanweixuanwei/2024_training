@@ -30,7 +30,7 @@
         android:layout_marginStart="16dp"
 
         android:background="@drawable/type_back"
-        android:drawableRight="@drawable/drawable_bank"
+        android:drawableRight="@drawable/vector_drawable_category"
         android:text="全部类型 | "
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"

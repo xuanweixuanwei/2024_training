@@ -13,7 +13,8 @@ import java.util.List;
 
 public class BillTypeAdapter extends RecyclerView.Adapter<BillTypeViewHolder> {
     private List<BillType> dataList;
-    private int selectedPosition = -1;
+    private int selectedPosition = 0;
+    public String selectedType ;
 
     public BillTypeAdapter(List<BillType> dataList) {
         this.dataList = dataList;
@@ -32,13 +33,20 @@ public class BillTypeAdapter extends RecyclerView.Adapter<BillTypeViewHolder> {
         // 设置选中状态
         holder.itemView.setSelected(position == selectedPosition);
         holder.itemView.setOnClickListener(v -> {
+
             int previousPosition = selectedPosition;
             selectedPosition = holder.getAdapterPosition();
+            selectedType = dataList.get(selectedPosition).getName();
             notifyItemChanged(previousPosition);
             notifyItemChanged(selectedPosition);
         });
     }
 
+    // 添加这个方法来更新数据源
+    public void updateData(List<BillType> newIcons) {
+        this.dataList=newIcons;
+        notifyDataSetChanged();
+    }
     @Override
     public int getItemCount() {
         return dataList.size();
